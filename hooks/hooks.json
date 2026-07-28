@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [{ "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}\"/hooks/ctxl-init.sh" }]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash|Grep",
+        "hooks": [{ "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}\"/hooks/ctxl-hook.sh" }]
+      }
+    ]
+  }
+}

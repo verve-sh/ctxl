@@ -1,0 +1,13 @@
+{
+  "name": "ctxl",
+  "version": "0.1.0",
+  "description": "Context ledger — intercepts large tool output, stores handles for bounded retrieval",
+  "author": { "name": "verve-sh", "url": "https://github.com/verve-sh/ctxl" },
+  "userConfig": {
+    "cacheDir": {
+      "type": "directory",
+      "title": "Cache directory",
+      "description": "Where ctxl stores per-session SQLite databases. Defaults to plugin-local cache/."
+    }
+  }
+}
